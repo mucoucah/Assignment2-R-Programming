@@ -79,7 +79,7 @@ tidy_data <- function(data_X_Y){
     summarize(mean = mean(Value,na.rm=TRUE),   
               std_dev = sd(Value,na.rm=TRUE)) %>% 
     ungroup()
-  write.csv(tb2, "./UCI HAR Dataset/full/tidy_set.csv")
+  write.csv(sum_df, "./UCI HAR Dataset/full/tidy_set.csv")
   View(sum_df)
 }
 
