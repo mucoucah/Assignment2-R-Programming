@@ -11,7 +11,7 @@ performing a variety of data transformations as described below and finally crea
 4. **Appropriately labels the data set with descriptive variable names.**
 5. **From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.**
 
-The Project2b.R file contains the necessary scripts to achieve the transformations. 
+The run_analysis.R file contains the necessary scripts to achieve the transformations. 
 First we must load the two libraries used in this script:
 ```R
 library(tidyr)
@@ -70,7 +70,7 @@ tidy_data(data_X_Y)
 
 IT take the dataframe from the previous function and gathers all variables in the columns placing them in rows (making a wide table long)
 
-Then it groups by Activity and measurement, summarize (producing mean and dev) and ungroup the dataset. It then displays the resul of the transformation to the screen using ```View()``` and writes the tidy tibble to a csv file. 
+Then it groups by Activity and measurement, summarize (producing mean and dev) and ungroup the dataset. It then displays the resul of the transformation to the screen using ```View()``` and writes the tidy tibble to a txt file. 
 
 This is the partial screen output:
 
